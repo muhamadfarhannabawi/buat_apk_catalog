@@ -101,3 +101,10 @@ class MyCatalog extends StatelessWidget {
                         fontSize: 12,
                         color: Colors.white,
                       ),
+                       ),
+                  ),
+                ),
+            ],
+          )
+        ],
+      ),
