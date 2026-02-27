@@ -120,3 +120,7 @@ class MyCatalog extends StatelessWidget {
     );
   }
 }
+
+//// 4. WIDGET TOMBOL TAMBAH ----
+class AddButton extends StatelessWidget {
+  final String item;
