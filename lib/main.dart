@@ -28,3 +28,14 @@ class CartModel extends ChangeNotifier {
       notifyListeners();
     }
   }
+
+   void remove(String itemName) {
+    _items.remove(itemName);
+    notifyListeners();
+  }
+
+  void clear() {
+    _items.clear();
+    notifyListeners();
+  }
+}
