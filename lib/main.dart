@@ -64,3 +64,8 @@ class MyCatalog extends StatelessWidget {
     'Ayam Bakar',
     'Kopi',
   ];
+
+   @override
+  Widget build(BuildContext context) {
+    final totalItems =
+        context.select<CartModel, int>((cart) => cart.totalItems);
