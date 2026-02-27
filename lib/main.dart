@@ -69,3 +69,16 @@ class MyCatalog extends StatelessWidget {
   Widget build(BuildContext context) {
     final totalItems =
         context.select<CartModel, int>((cart) => cart.totalItems);
+
+        return Scaffold(
+      appBar: AppBar(
+        title: const Text('Katalog Makanan'),
+        actions: [
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.shopping_cart),
+                onPressed: () {
+                  Navigator.push(
+                    context,
