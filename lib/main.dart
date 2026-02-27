@@ -88,3 +88,16 @@ class MyCatalog extends StatelessWidget {
                   );
                 },
               ),
+               if (totalItems > 0)
+                Positioned(
+                  right: 8,
+                  top: 8,
+                  child: CircleAvatar(
+                    radius: 10,
+                    backgroundColor: Colors.red,
+                    child: Text(
+                      totalItems.toString(),
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                      ),
