@@ -17,3 +17,14 @@ class CartModel extends ChangeNotifier {
 
   UnmodifiableListView<String> get items =>
       UnmodifiableListView(_items);
+
+       int get totalItems => _items.length;
+
+  bool contains(String item) => _items.contains(item);
+
+  void add(String itemName) {
+    if (!_items.contains(itemName)) {
+      _items.add(itemName);
+      notifyListeners();
+    }
+  }
