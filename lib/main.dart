@@ -52,3 +52,15 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//// 3. HALAMAN KATALOG ----
+class MyCatalog extends StatelessWidget {
+  const MyCatalog({super.key});
+
+  final List<String> products = const [
+    'Nasi Goreng',
+    'Sate Ayam',
+    'Es Teh',
+    'Ayam Bakar',
+    'Kopi',
+  ];
