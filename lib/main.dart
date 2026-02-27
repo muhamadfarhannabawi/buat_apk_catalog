@@ -82,3 +82,9 @@ class MyCatalog extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
+                    MaterialPageRoute(
+                      builder: (_) => const MyCart(),
+                    ),
+                  );
+                },
+              ),
