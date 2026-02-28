@@ -155,3 +155,7 @@ class AddButton extends StatelessWidget {
 //// 5. HALAMAN KERANJANG ----
 class MyCart extends StatelessWidget {
   const MyCart({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final cart = context.watch<CartModel>();
