@@ -159,3 +159,15 @@ class MyCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cart = context.watch<CartModel>();
+
+     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Keranjang Belanja'),
+      ),
+      body: cart.items.isEmpty
+          ? const Center(
+              child: Text(
+                'Keranjang masih kosong 🛒',
+                style: TextStyle(fontSize: 18),
+              ),
+            )
