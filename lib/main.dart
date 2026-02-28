@@ -171,3 +171,23 @@ class MyCart extends StatelessWidget {
                 style: TextStyle(fontSize: 18),
               ),
             )
+            : Column(
+              children: [
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: cart.items.length,
+                    itemBuilder: (context, index) {
+                      final item = cart.items[index];
+                      return ListTile(
+                        leading: const Icon(Icons.fastfood),
+                        title: Text(item),
+                        trailing: IconButton(
+                          icon: const Icon(Icons.delete),
+                          onPressed: () {
+                            context.read<CartModel>().remove(item);
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                ),
