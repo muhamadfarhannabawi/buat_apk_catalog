@@ -191,3 +191,14 @@ class MyCart extends StatelessWidget {
                     },
                   ),
                 ),
+                 const Divider(),
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Total Item: ${cart.totalItems}',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
